@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/montant"/>
+
+        <EditText
+            android:id="@+id/montantEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Ex: 50.00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description de la dépense"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date (JJ/MM/AAAA)"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="01/01/2024"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categorie"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/categorieRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/alimentationRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alimentation"/>
+
+            <RadioButton
+                android:id="@+id/transportRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport"/>
+
+            <RadioButton
+                android:id="@+id/loisirsRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loisirs"/>
+
+            <RadioButton
+                android:id="@+id/autreRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autre"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/importantCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dépense importante"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/validerButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/validate"
+                android:backgroundTint="@color/success_color"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/razButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset"
+                android:backgroundTint="@color/error_color"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

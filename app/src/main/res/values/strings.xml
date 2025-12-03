@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Budget Tracker</string>
+
+    <!-- Français par défaut -->
+    <string name="welcome">Bienvenue dans Budget Tracker</string>
+    <string name="app_description">Application de suivi des dépenses personnelles</string>
+    <string name="start">Commencer</string>
+    <string name="quit">Quitter</string>
+    <string name="form_title">Nouvelle Dépense</string>
+    <string name="montant">Montant (€)</string>
+    <string name="categorie">Catégorie</string>
+    <string name="description">Description</string>
+    <string name="validate">Valider</string>
+    <string name="reset">RAZ</string>
+    <string name="result_title">Résultat Budget</string>
+    <string name="calculer">Calculer</string>
+    <string name="valider_retour">Valider et retourner</string>
+    <string name="annuler">Annuler</string>
+
+    <!-- Messages -->
+    <string name="merci">Merci d\'avoir utilisé Budget Tracker</string>
+    <string name="donnees_enregistrees">Données enregistrées</string>
+    <string name="champ_obligatoire">Ce champ est obligatoire</string>
+    <string name="montant_positif">Le montant doit être positif</string>
+    <string name="select_categorie">Veuillez sélectionner une catégorie</string>
+</resources>

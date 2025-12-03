@@ -1,0 +1,26 @@
+# Built files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Android Studio
+.idea/
+*.iml
+local.properties
+
+# OS
+.DS_Store
+Thumbs.db

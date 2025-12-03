@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/recapitulatifTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:background="#F5F5F5"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/calculerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculer"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/resultatTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="#E8F5E9"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/validerRetourButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider_retour"
+        android:backgroundTint="@color/success_color"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/annulerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/annuler"
+        android:backgroundTint="@color/error_color"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
